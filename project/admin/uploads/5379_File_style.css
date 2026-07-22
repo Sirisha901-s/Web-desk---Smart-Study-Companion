@@ -1,0 +1,193 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.fa-plus {
+  cursor: pointer;
+  
+}
+.fa-plus:hover {
+  cursor: pointer;
+  color:blue;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form and Resume Sections */
+.form-section, .resume-section {
+  width: 70%;           /* Increased width */
+  max-width: 900px;     /* Prevents too large on big screens */
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Section Headings */
+.form-section h2, .resume-section header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input {
+  margin: 1.3rem 0;
+  display: flex;
+  flex-wrap: wrap;   /* Allows wrapping on smaller screens */
+  gap: 10px;         /* Space between inputs */
+  align-items: center;
+}
+
+.box {
+  flex: 1 1 45%;     /* Roughly half of container width */
+  padding: 1rem;
+  border: 1px solid #efe9e9;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Textarea */
+textarea.box {
+  flex: 1 1 100%;    /* Full width for about me */
+  min-height: 100px;
+}
+
+/* Labels and Spans */
+span {
+  width: 7rem;
+  font-size: 0.9rem;
+  color: #575757;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Row and Flex Containers */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;  /* Center the contact info */
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.2rem;
+  padding: 5px 0;
+}
+.flex p, .flex h5 {
+  margin: 0 5px;
+}
+
+/* Lists */
+.details-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.details-list li {
+  margin-bottom: 6px;
+  position: relative;
+}
+ul {
+  padding: 0 40px;
+}
+ul li {
+  font-size: 15px;
+  line-height: 1.1;
+  margin: 5px 0;
+}
+
+/* Resume Header */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+header h1 {
+  margin: 5px 0;
+  font-size: 2.5rem;
+}
+header h4 {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Sections in Resume */
+section {
+  margin: 2rem 0;
+  line-height: 1.2rem;
+}
+h2 {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #007bff;
+  color: #333;
+}
+h2 i {
+  font-size: 1rem;
+  padding-right: 5px;
+}
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Trash & Delete buttons */
+.trash-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.bullet-delete {
+  background: none;
+  border: none;
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: -40px;
+  top: 0;
+}
+/* Headings Bold */
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+/* Description/Text Normal */
+p, li, span {
+  font-weight: normal;
+}
+/* Hide elements during print/export */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
